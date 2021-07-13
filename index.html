@@ -96,7 +96,7 @@
 <p>默认情况下，41 位的时间戳支持69.7年，10位的机器 ID 支持 1023 台机器，序列号每毫秒产生 4095 个自增 ID。</p>
 <h3 id="时间戳"><a href="#时间戳" class="headerlink" title="时间戳"></a>时间戳</h3><p>默认的时间戳是毫秒级，一共有T（1 &lt;&lt; 41）毫秒可以供你分配，年份= T/年份 = T / (3600 * 24 * 365 * 1000) = 69.7年。</p>
 <h3 id="机器-ID（WorkerID）"><a href="#机器-ID（WorkerID）" class="headerlink" title="机器 ID（WorkerID）"></a>机器 ID（WorkerID）</h3><p>严格意义上来说，WorkerID 使用的可以是进程级。机器级别的话，可以使用 MAC 地址来唯一标识 WorkerID。</p>
-<h3 id="序列号"><a href="#序列号" class="headerlink" title="序列号"></a>序列号</h3><p>序列号就是单位时间戳内自增的 ID，多线程情况下使用 automic。</p>
+<h3 id="序列号"><a href="#序列号" class="headerlink" title="序列号"></a>序列号</h3><p>序列号是单位时间戳内自增的 ID，多线程情况下使用 automic。</p>
 
       
     </div>
