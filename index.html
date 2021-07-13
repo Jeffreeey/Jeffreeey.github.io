@@ -87,7 +87,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><h3 id="Twitter-Snowflake"><a href="#Twitter-Snowflake" class="headerlink" title="Twitter-Snowflake"></a>Twitter-Snowflake</h3><p>为了满足每秒上万条消息的请求，每条消息都必须分配一条唯一 id，id 需要保持有序，在分布式系统中，每一台机器产生的 id必须不同。</p>
+<p>算法原理：</p>
+<p>ID=时间戳 + 工作机器 ID + 序列号</p>
+<p>具体如下图所示</p>
 <p><img src="/Users/jeffrey/IdeaProjects/Jeffreeey.github.io/source/_posts/snowflake.jpeg" alt="snowflake"></p>
+<p>除了最高位 bit 标记为不可用外，其他</p>
 
       
     </div>
