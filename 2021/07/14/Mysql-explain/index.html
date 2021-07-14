@@ -14,7 +14,7 @@
 <meta property="og:description" content="Explain需要关注的几个参数： type，ref，rows，extra 参数详解   id Columns JSON Name Meaning    1 id select_id 每个select子句的标识id   2 select_type None select语句的类型   3 table table_name 当前表名   4 partitions partitions 匹配的分区">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-07-14T07:00:24.000Z">
-<meta property="article:modified_time" content="2021-07-14T07:06:30.762Z">
+<meta property="article:modified_time" content="2021-07-14T07:08:37.132Z">
 <meta property="article:author" content="zhangjingtai">
 <meta name="twitter:card" content="summary">
     
@@ -347,7 +347,7 @@
 <tr>
 <td align="left">11</td>
 <td align="left">Using join buffer</td>
-<td align="left">之前的表连接在nested loop之后放进join buffer，再来和本表进行join。适用于本表的访问type为range，index或all</td>
+<td align="left">之前的表连接在nested loop之后放进join buffer，再来和本表进行join。适用于本表的访问type为range，index或all.在获取连接条件时没有使用索引，并且需要连接缓冲区来存储中间结果。如果出现了这个值，那应该注意，根据查询的具体情况可能需要添加索引来改进能。</td>
 </tr>
 <tr>
 <td align="left">12</td>
